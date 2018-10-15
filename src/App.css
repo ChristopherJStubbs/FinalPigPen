@@ -8,25 +8,74 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #006600;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  color: black;
+  font-family: "Comic Sans MS", monospace;
+  background-image: url("https://vectortoons.com/wp-content/uploads/2014/01/vectortoons-01-18-1564.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+ background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.Pig {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-position: 'center';
+	background-size: 'cover';
+	background-repeat: 'noRepeat';
+	background-color: brown;
+}
+.pigOutput {
+	position: absolute;
+	height: 480px;
+	width: 535px;
+	top: 305px;
+	left: 34px;
+	font-size: 38px;
+
+	color: white;
+	font-family: "Comic Sans MS";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textbox {
+	color: white;
+	padding: 10px 10px;
+	font-weight: bold;
+	font-size: 49px;
+
+
+}
+.input-field {
+	background: #fff;
+	color: black;
+	border-style: none;
+	border-color: #0066A2;
+	height: 36.25px;
+	width: 400px;
+	font: bold 15px arial, sans-serif;
+	text-shadow:none;
+}
+.submit-button {
+	background: #ffbb00;
+	color: white;
+	border-style: none;
+	border-color: #FFF;
+	height: 38.5px;
+	width: 70px;
+	font: bold 15px arial, sans-serif;
+	text-shadow:none;
+
+}
+
+.submitStyle {
+position: absolute;
+left: 123px;
+
+
 }

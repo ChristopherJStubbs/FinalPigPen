@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Piglatin from './piglatin.js'
+import Input from './Input.js'
 
 class App extends Component {
+	constructor(props){
+	    super(props)
+	    this.state = {
+	      greeting: ''
+	    }
+	  }
+
+	takeInput(newInput) {
+		this.setState({greeting: newInput})
+	}
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+		<div className="textbox">
+		Welcome to the Pig Pen
+		</div>
         </header>
+		<div className="Pig" style={{  backgroundImage: "url(" + "https://kathleenhalme.com/images/pigs-clipart-teacher-5.png" + ")",
+  		  backgroundPosition: 'center',
+  		  backgroundSize: 'contain',
+  		  backgroundRepeat: 'no-repeat',}}>
+
+		  <Input submit={this.takeInput.bind(this)} />
+		  <Piglatin newString={this.state.greeting} />
+  		</div>
       </div>
     );
   }
